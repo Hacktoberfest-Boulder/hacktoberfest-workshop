@@ -13,7 +13,7 @@ $( document ).ready(() => {
       date: '12/25/17'
     },
     {
-      name: 'ny2e',
+      name: 'nye',
       date: '12/31/17'
     },
     {
@@ -25,7 +25,7 @@ $( document ).ready(() => {
       date: '11/27/17'
     },
   ];
- 
+
   for (var i = 0; i < events.length; i++) {
     $('.event-list').append($('<li>'+events[i].name + ' - ' + events[i].date+'</li>'))
   }
