@@ -26,7 +26,13 @@ $( document ).ready(() => {
     },
   ];
 
+  
   for (var i = 0; i < events.length; i++) {
-    $('.event-list').append($('<li>'+events[i].name + ' - ' + events[i].date+'</li>'))
+    $('.event-list').append($('<tr>'))
+    $('.event-list').append($(' <td>' + events[i].name + '</td>'))
+    $('.event-list').append($(' <td>' + events[i].date + '</td>'))
+    $('.event-list').append($('</tr>'))
   }
+
+  
 });
